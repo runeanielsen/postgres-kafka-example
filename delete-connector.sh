@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -X DELETE http://localhost:8083/connectors/inventory-connector
+curl -X DELETE http://localhost:8083/connectors/open-ftth-connector

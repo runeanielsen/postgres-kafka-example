@@ -21,6 +21,9 @@ services:
     environment:
      - POSTGRES_USER=postgres
      - POSTGRES_PASSWORD=postgres
+     - WAL_LEVEL=logical
+    volumes:
+     - .:/open_ftth
   connect:
     image: debezium/connect:${DEBEZIUM_VERSION}
     ports:

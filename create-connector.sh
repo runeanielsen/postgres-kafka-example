@@ -6,14 +6,15 @@ curl -X POST -H "Accept:application/json" -H "Content-Type:application/json" loc
  "config": {
  "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
  "tasks.max": "1",
+ "plugin.name": "pgoutput",
  "database.hostname": "postgres",
  "database.port": "5432",
  "database.user": "postgres",
  "database.password": "postgres",
- "database.dbname" : "inventory",
+ "database.dbname" : "FTTH_TEST",
  "database.server.name": "dbserver1",
- "database.whitelist": "inventory",
+ "database.whitelist": "FTTH_TEST",
  "database.history.kafka.bootstrap.servers": "kafka:9092",
- "database.history.kafka.topic": "schema-changes.inventory"
+ "database.history.kafka.topic": "schema-changes.FTTH_TEST"
  }
 }'
